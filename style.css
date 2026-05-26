@@ -1,83 +1,71 @@
+:root {
+    --bg-color: #baaa90;
+    --container-color: #71d16c;
+    --border-color: #f0e854;
+
+    --spid-color: #5b62db;
+    --spid-glow-color: #62cdd9;
+
+    --cie-color: #993486;
+    --cie-glow-color: #df5ce3;
+
+    --text-color: #fff;
+    --text-hover: #e85959;
+    --text-font: "Segoe UI", Roboto, Helvetica, Arial;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
 
 body {
-    background-color: #d3aeae;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     overflow: hidden;
     height: 100vh;
 }
 
-/* ##### HEAD ##### */
+.navbar {
+    position: fixed;
+    top: 0; left: 0;
 
-#head {
+    width: 100vw;
+    height: 70px;
+
     display: flex;
-    flex-direction: row;
-    width: 80vw;
     justify-content: space-between;
-    background-color: aqua;
-    padding: 20px;
+    align-items: center;
+
+    background-color: var(--container-color);
+    border-bottom: 1px solid var(--border-color);
+
+    padding: 0 40px;
+    z-index: 5;
 }
 
-.button {
-    background-color: #96ce8b;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
+.nav-credits {
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
 }
 
-.button:hover{
-    background-color: blueviolet;
-}
-
-/* ##### CARDS ##### */
-
-#container {
+.nav-links {
     display: flex;
-    flex-direction: row;
-    margin: 20px;
+    gap: 30px;
+    list-style: none;
 }
 
-.card {
-    background-color: #96ce8b;
-    padding: 20px;
-    margin: 10px;
-    height: 60vh;
-    width: 30vw;
-    border-radius: 5%;
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-.content {
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-
-    transition: transform 1s;
-    transform-style: preserve-3d;
-}
-
-.card.flipped .content {
-    transform: rotateY( 180deg );
-    transition: transform 0.5s;
-}
-
-.front,
-.back {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: white;
-    line-height: 300px;
-    color: #03446A;
-    text-align: center;
-    font-size: 60px;
-    border-radius: 5px;
-    backface-visibility: hidden;
-}
-
-.back {
-    background: #03446A;
-    color: white;
-    transform: rotateY( 180deg );
+.nav-links a:hover {
+    color: var(--text-hover);
 }

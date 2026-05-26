@@ -3,48 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Identità digitale: SPID 6 CIE</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="head">
-        <div>
-            <a href="" class="button">test</a>
-            <a href="" class="button">test</a>
-            <a href="" class="button">test</a>
+    <nav class="navbar" id="navbar">
+        <div class="nav-credits">Presentato da Rimmi</div>
+        <ul class="nav-links">
+            <li><a href="#">test</a></li>
+            <li><a href="#">test</a></li>
+            <li><a href="#">test</a></li>
+        </ul>
+    </nav>
+
+    <div class="centerdiv" id="centerdiv">
+        <h1>Differenze</h1>
+    </div>
+
+    <div class="splitcontainer" id="splitcontainer">
+        <div class="side spid" id="sidespid">
+            <div class="icon-wrapper">
+                <div class="icon-phone"></div>
+            </div>
+
+            <h2>SPID</h2>
+            <p class="desc">descrizione spid</p>
+            <button class="btn" onclick="openDetails('spid')">Scopri di più →</button>
         </div>
-        <div>
-            djwhdjahd
-            <a href="" class="button">test</a>
+
+        <div class="side cie" id="sidecie">
+            <div class="icon-wrapper">
+                <div class="icon-card"></div>
+            </div>
+
+            <h2>CIE</h2>
+            <p class="desc">descrizione cie</p>
+            <button class="btn" onclick="openDetails('cie')">Scopri di più →</button>
         </div>
     </div>
-    <div id="container">
-        <div id="cardone" class="card">
-            <div class="content">
-                <div class="front">
-                    cscascdawscaw
-                    <button onclick="card1()" class="flip">test</button>
-                </div>
-                <div class="back">
-                    cesgvrefgvs
-                    <button onclick="card1()" class="flip">test</button>
-                </div>
-            </div>            
-        </div>
-        <div id="cardtwo" class="card">
-            <div class="content">
-                <div class="front">
-                    cscascdawscaw
-                    <button onclick="card2()" class="flip">test</button>
-                </div>
-                <div class="back">
-                    cesgvrefgvs
-                    <button onclick="card2()" class="flip">test</button>
-                </div>
-            </div>            
-        </div>     
-        </div>
+
+    <div class="infopanel" id="infopanel">
+        <div class="clsoe-panel" onclick="clsoeDetails()">← Torna indietro</div>
+        <h2 id="paneltitle"></h2>
+        <p id="panelcontent"></p>
     </div>
-    <script src="script.js"></script>
+    
 </body>
 </html>
