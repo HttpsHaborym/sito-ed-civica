@@ -1,19 +1,3 @@
-<<<<<<< Updated upstream
-
-body {
-    background-color: #d3aeae;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 100vh;
-}
-
-/* ##### HEAD ##### */
-
-#head {
-=======
 :root {
     --primary-color: #00f0ff; 
     --secondary-color: #ff007f;
@@ -97,77 +81,10 @@ body {
     background: rgba(10, 10, 26, 0.7);
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(12px);
->>>>>>> Stashed changes
     display: flex;
     flex-direction: row;
     width: 80vw;
     justify-content: space-between;
-<<<<<<< Updated upstream
-    background-color: aqua;
-    padding: 20px;
-}
-
-.button {
-    background-color: #96ce8b;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-.button:hover{
-    background-color: blueviolet;
-}
-
-/* ##### CARDS ##### */
-
-#container {
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
-}
-
-.card {
-    background-color: #96ce8b;
-    padding: 20px;
-    margin: 10px;
-    height: 60vh;
-    width: 30vw;
-    border-radius: 5%;
-}
-
-.content {
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-
-    transition: transform 1s;
-    transform-style: preserve-3d;
-}
-
-.card.flipped .content {
-    transform: rotateY( 180deg );
-    transition: transform 0.5s;
-}
-
-.front,
-.back {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: white;
-    line-height: 300px;
-    color: #03446A;
-    text-align: center;
-    font-size: 60px;
-    border-radius: 5px;
-    backface-visibility: hidden;
-}
-
-.back {
-    background: #03446A;
-    color: white;
-    transform: rotateY( 180deg );
-=======
     align-items: center;
     padding: 0 40px;
     box-shadow: 0 4px 20px rgba(0, 240, 255, 0.15);
@@ -480,5 +397,4 @@ body {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
->>>>>>> Stashed changes
 }
