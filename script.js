@@ -1,15 +1,3 @@
-<<<<<<< Updated upstream
-
-
-function card1() {
-    cardone.classList.toggle("flipped"); 
-    console.log("flipped")
-}
-
-function card2() {
-    cardtwo.classList.toggle("flipped"); 
-    console.log("flipped")
-=======
 function togglePanel(panelId) {
     const panelSpid = document.getElementById('panel-spid');
     const panelCie = document.getElementById('panel-cie');
@@ -34,11 +22,6 @@ function togglePanel(panelId) {
     }
 }
 
-document.getElementById('search').addEventListener('input', function(e) {
-    const query = e.target.value.toLowerCase();
-    console.log("Ricerca:", query);
-});
-
 function openPopup() {
     const popup = document.getElementById('popup');
     popup.classList.add('attivo');
@@ -54,5 +37,4 @@ window.onclick = function(event) {
     if (event.target === popup) {
         popup.classList.remove('attivo');
     }
->>>>>>> Stashed changes
 }
