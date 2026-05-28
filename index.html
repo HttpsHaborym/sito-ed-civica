@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< Updated upstream
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -45,6 +46,82 @@
         </div>     
         </div>
     </div>
+=======
+    <title>Confronto SPID vs CIE con Stelle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sky">
+        <div class="stars"></div>
+        <div class="stars stars2"></div>
+    </div>
+
+    <header class="top-bar">
+        <div class="credits">Creato da Teodora e Davide</div>
+        <div class="search-container">
+            <button class="btn-search" onclick="openPopup()">Info</button>
+        </div>
+    </header>
+
+    <main class="container" id="panels-container">
+        <div class="panel" id="panel-spid">
+            <div class="panel-image" id="img-spid"><img src="./assets/spid.png" class="panel-image"></div>
+            <div class="panel-content">
+                <h2 class="panel-title">Cos'è lo SPID?</h2>
+                <p class="panel-desc">Lo SPID è l'identità digitale unica per accedere ai servizi online della Pubblica Amministrazione e dei privati aderenti tramite un unico account. È semplice, sicuro, veloce e utilizzabile da qualsiasi dispositivo ogni volta che trovi il polnante "Entra con SPID".</p>
+                <div class="extra-info">
+                    <h3>Informazioni aggiuntive</h3>
+                    <p><span class="highlight">Requisiti per fare lo SPID:</span> Avere almeno 18 anni (per SPID standard); Possedere un documento italiano valido; Avere un codice fiscale italiano; Avere un numero di cellulare personale; Avere un indirizzo email personale.</p>
+                    <p><span class="highlight">Come ottenere lo SPID:</span> Per ottenere le tue credenziali SPID devi rivolgerti ad un identity provider accreditato dall'Agenzia per l'Italia Digitale (AgID). Al momento i gestori d'identità sono 12, il più conosciuto è Poste Italiane. Ogni gestore offre diverse modalità per richiedere e ottenere SPID: scegli quella più adatta alle tue esigenze. L'attivazione richiede riconoscimento in presenza, da remoto (webcam, bonifico, documenti) o tramite bonifico identificativo.</p>
+                    <p><span class="highlight">Cosa è il bonifico identificativo:</span> Consiste nel fare un piccolo bonifico (di solito 1 € circa), il bonifico deve partire da un conto corrente intestato a te e il provider controlla che: Nome e cognome del conto coincidano con quelli del richiedente; IBAN e dati bancari siano validi.</p>
+                    <p><span class="highlight">Dati e scadenze:</span> SPID conta circa 40 milioni di identità (2025). Oltre 12.000 pubbliche amministrazioni consentono l'accesso tramite SPID. L'identità si rinnova automaticamente ogni due anni, mentre la password ha una validità di 180 giorni.</p>
+                    <div class="livelli-container">
+                        <p class="highlight">Livelli dello SPID:</p>
+                        <p><span class="highlight">Livello 1:</span> Autenticazione con utente e password. Gratuito ed usato per servizi a basso rischio.</p>
+                        <p><span class="highlight">Livello 2:</span> Autenticazione con utente, password e codice temporaneo OTP generato via app o SMS. Il prezzo varia in base al provider ed è usato per INPS o Fascicolo sanitario (è una forma di 2FA). Alcuni provider lo danno gratuito, altri a canone annuale.</p>
+                        <p><span class="highlight">Livello 3:</span> Autenticazione tramite dispositivo fisico (es. smart card, CNS, certificati digitali) per massimo livello di sicurezza. A pagamento ed usato per servizi sensibili (es. alcuni servizi INAIL).</p>
+                    </div>
+                </div>
+                <button class="btn-expand" onclick="togglePanel('panel-spid')">Scopri di più</button>
+            </div>
+        </div>
+
+        <div class="panel" id="panel-cie">
+            <div class="panel-image" id="img-cie"><img src="./assets/cie.png" class="panel-image"></div>
+            <div class="panel-content">
+                <h2 class="panel-title">Cos'è la CIE?</h2>
+                <p class="panel-desc">La CIE è la versione elettronica del documento di identità fisico emesso dallo Stato. Si presenta come una tessera elettronica munita di microchip che contiene molte più informazioni rispetto allo SPID, come ad esempio le impronte digitali.</p>
+                <div class="extra-info">
+                    <h3>Informazioni aggiuntive</h3>
+                    <p><span class="highlight">Differenze SPID vs CIE:</span> Entrambe possono considerarsi identità digitali e sono oggi molto utili per accedere ai servizi della pubblica amministrazione e non solo. Tuttavia, esistono alcune differenze fondamentali tra SPID e CIE. La differenza sostanziale tra SPID e CIE risiede nella natura dello strumento:</p>
+                    <p>La <span class="highlight">CIE</span> è la versione elettronica del documento di identità fisico, emesso direttamente dallo Stato.</p>
+                    <p><span class="highlight">Requisiti per la CIE:</span> Essere iscritti all'anagrafe di un comune italiano o, per i residenti all'estero, essere cittadini italiani iscritti all'AIRE.</p>
+                    <p><span class="highlight">Come ottenere la CIE:</span> Viene rilasciata dal Comune di residenza o di dimora. La richiesta si fa presso gli uffici comunali su appuntamento (prenotabile spesso tramite il portale ministeriale "Agenda CIE"). Non viene consegnata subito: viene spedita dall'Istituto Poligrafico e Zecca dello Stato all'indirizzo indicato entro 6 giorni lavorativi.</p>
+                    <p><span class="highlight">Costo della CIE:</span> Ha un costo fisso ministeriale di 16,79 €, a cui si aggiungono i diritti di segreteria del Comune (il costo totale si aggira solitamente intorno ai 22-23 €). In caso di duplicato per smarrimento o furto, il costo può raddoppiare.</p>
+                    <p><span class="highlight">Validità della tessera:</span> La durata varia in base all'età del titolare: 3 anni per i minori di 3 anni; 5 anni per i minori tra i 3 e i 18 anni; 10 anni per i maggiorenni.</p>
+                    <p><span class="highlight">PIN e PUK:</span> Al momento della richiesta in Comune viene consegnata la prima metà dei codici PIN e PUK; la seconda metà arriva a casa insieme alla tessera. Servono per configurare l'app CieID e sbloccare l'accesso di Livello 3.</p>
+                    <div class="livelli-container">
+                        <p class="highlight">Livelli di sicurezza CIE:</p>
+                        <p><span class="highlight">Livello 1:</span> Accesso tramite inserimento di username e password (creati sul portale CIE).</p>
+                        <p><span class="highlight">Livello 2:</span> Accesso tramite username, password e un codice temporaneo OTP inviato via SMS, oppure scansionando un codice QR dall'app CieID.</p>
+                        <p><span class="highlight">Livello 3:</span> Massimo livello di sicurezza. Richiede l'utilizzo fisico della tessera poggiata sul retro di uno smartphone dotato di tecnologia NFC (tramite app CieID) oppure inserita in un lettore di smart card collegato al computer.</p>
+                    </div>
+                </div>
+                <button class="btn-expand" onclick="togglePanel('panel-cie')">Scopri di più</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="popup" class="popup-overlay">
+        <div class="popup-body">
+            <span class="popup-close" onclick="closePopup()">&times;</span>
+            <h2>L'identità Digitale</h2>
+            <p>È l'insieme delle informazioni e dei dati univoci associati a una persona o a una macchina che ne permettono il riconoscimento online. Funziona come una rappresentazione virtuale dell'identità reale per accedere ai servizi online e sottoscrivere documenti digitali con valore legale.</p>
+        </div>
+    </div>
+
+>>>>>>> Stashed changes
     <script src="script.js"></script>
 </body>
 </html>
